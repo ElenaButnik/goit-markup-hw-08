@@ -1,0 +1,51 @@
+
+/*team - наша команда*/
+.team {
+    background-color: var(--background-color-section);
+}
+.team__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+
+    @media screen and (min-width: 768px)  {
+      margin-top: calc(-1 * var(--card-set-gap));
+      margin-left: calc(-1 * var(--card-set-gap));
+    }
+}
+.team__person {
+    flex-basis: 100%;
+    text-align: center;
+    background-color: var(--text-color-accent);
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 
+    0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+
+      @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 2 * 30px) / 2);
+        margin-left: var(--card-set-gap);
+        margin-top: var(--card-set-gap);
+      }
+    
+      @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 4 * 30px) / 4);
+      }
+     
+  }
+  .team__person:not(:last-child) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
+    }
+  } 
+
+ 
+.team__description {
+    font-size: 16px;
+    line-height: 1.19;
+    margin-bottom: 16px;
+}
+.team__person-description  {
+   padding: 30px 32px;
+}

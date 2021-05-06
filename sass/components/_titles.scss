@@ -1,0 +1,20 @@
+.section__title {
+    margin-bottom: 50px;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--title-text-color);
+
+    @media screen and (min-width: 1200px) {
+        font-size: 36px;
+    }
+}
+
+.section__name {
+    margin-bottom: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    color: var(--title-text-color);
+}

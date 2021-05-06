@@ -1,0 +1,44 @@
+/*блок герой*/
+.hero {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    background-color: var(--background-color-accent);
+}
+.hero__title {
+    max-width: 696px;
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--text-color-accent);
+    margin-bottom: 30px;
+
+    @media screen and (min-width: 1200px) {
+    font-size: 44px;  
+    }
+}
+.hero__button {
+    display: inline-block;
+    padding: 10px 32px;
+
+    &:focus,
+    &:hover {
+    background-color: var(--button-focus-color);
+}
+}
+
+.hero--overlay {
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), url(../images/img-overlay.jpg);
+    background-color: var(--hero-background-color);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}

@@ -1,0 +1,11 @@
+/*footer*/
+.footer {
+    background-color: var(--background-color-accent);
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.footer__logo--color {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--accent-color);
+}

@@ -1,0 +1,26 @@
+/*цвет-акцент #2196F3 */
+/*цвет заголовков #212121;*/
+/*цвет обычного текста  #757575;*/
+/*цвет-акцент текста #FFFFFF;*/
+/*цвет-акцент фона #2F303A;*/
+/*цвет-акцент секции #F5F4FA;*/
+/*section-title - h2*/
+/*section-name - h3*/
+
+
+:root {
+    --accent-color: #2196F3;  
+    --title-text-color: #212121;
+    --text-color-accent: #ffffff;
+    --background-color:  #E5E5E5;
+    --background-color-accent: #2F303A;
+    --background-color-section: #F5F4FA;
+    --button-focus-color: #188CE8;
+    --body-color: #757575;
+    --gallery__border-color: #EEEEEE;
+    --header-border-bottom-color: #ECECEC;
+    --hero-background-color: #C4C4C4;
+    --icons-color: #AFB1B8;
+    --title-font: "Raleway", sans-serif;
+    --card-set-gap: 30px;
+}
