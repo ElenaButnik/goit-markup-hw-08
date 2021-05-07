@@ -18,7 +18,6 @@
 }
 .advantages__item {
     flex-basis: 100%;
-    background-color: rgb(176, 230, 230);
 
     @media screen and (min-width: 768px) {
       flex-basis: calc((100% - 2 * 30px) / 2);
@@ -58,7 +57,7 @@
 .advantages__icons {
    @extend %flex;
   justify-content: center;
-  width: 270px;
+  max-width: 450px;
   height: 120px;
   margin-bottom: var(--card-set-gap);
   background-color: var(--background-color-section);
