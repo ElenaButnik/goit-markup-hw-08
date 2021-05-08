@@ -8,7 +8,7 @@
     background-color: var(--background-color-accent);
 }
 .hero__title {
-    max-width: 696px;
+    max-width: 360px;
     font-weight: 900;
     font-size: 26px;
     line-height: 1.36;
@@ -16,8 +16,10 @@
     text-transform: uppercase;
     color: var(--text-color-accent);
     margin-bottom: 30px;
+   
 
     @media screen and (min-width: 1200px) {
+    max-width: 696px;
     font-size: 44px;  
     }
 }
@@ -33,7 +35,7 @@
 
 .hero--overlay {
     max-width: 1600px;
-    height: 600px;
+    height: 400px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ), 
@@ -44,22 +46,30 @@
     background-size: cover;
 
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-        background-image: url(../images/mobile/hero2x-mobile.jpg);
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+         url(../images/mobile/hero2x-mobile.jpg);
       }
     
       @media screen and (min-width: 480px) {
-        background-image: url(../images/tablet/hero-tablet.jpg);
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+        url(../images/tablet/hero-tablet.jpg);
     
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background-image: url(../images/tablet/hero2x-tablet.jpg);
+          background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+          url(../images/tablet/hero2x-tablet.jpg);
         }
       }
     
       @media screen and (min-width: 768px) {
-        background-image: url(../images/desctop/hero-desctop.jpg);
+        background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+        url(../images/desctop/hero-desctop.jpg);
     
         @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-          background-image: url(../images/desctop/hero2x-desctop.jpg);
+          background-image: linear-gradient( to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4) ),
+          url(../images/desctop/hero2x-desctop.jpg);
         }
+      }
+      @media screen and (min-width: 1200px) {
+        height: 600px;
       }
 }

@@ -12,16 +12,16 @@ line-height: 1.175;
 letter-spacing: 0.02em;
 color: var(--title-text-color);
 }
-.header__link--phone {
+.header__link--mail {
 display: block;
 margin-bottom: 32px;
 font-weight: 500;
-font-size: 34px;
+font-size: 26px;
 line-height: 1.18;
 letter-spacing: 0.02em;
 color: var(--accent-color);
 }
-.header__link--mail {
+.header__link--phone {
 display: block;
 margin-bottom: 64px;
 font-weight: 500;
@@ -76,6 +76,9 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
      &.is-open {
      right: 0;
      }
+     @media screen and (min-width: 768px)  {
+        display: none;   
+     }
 }
 
 .mobile-menu-btn {
@@ -98,6 +101,10 @@ border-right: 1px solid rgba(33, 33, 33, 0.2);
   &:focus .mobile-menu-icon {
     fill: var(--accent-color);
 }
+  &.is-open{
+    position: fixed;
+  }
+
 }
 
 .mobile-menu-icon {

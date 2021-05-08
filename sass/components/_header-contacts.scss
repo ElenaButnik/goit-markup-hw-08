@@ -24,11 +24,17 @@
 }
 }
 
-.header__item:first-of-type {
-    @media screen and (min-width: 768px) and (max-width: 1199px) {
-        margin-bottom: 10px;
-    } 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .header__link--header-mail {
+     padding-top: 15px;
+}
+    .header__link--header-phone {
+    padding-bottom: 15px;
+}
+    .header__item:first-of-type {
+     margin-bottom: 10px;
    }
+}
 
 .header__contacts {
     display: none;
