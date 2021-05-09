@@ -58,6 +58,7 @@
 .header__content {
     @extend %flex;
     flex-wrap: wrap;
+    position: relative;
 }
 
 .header__icon {
